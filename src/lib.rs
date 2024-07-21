@@ -4,7 +4,7 @@ use quote::quote;
 use syn::{parse_macro_input, AttributeArgs, ItemFn, Lit, Meta, NestedMeta};
 
 #[proc_macro_attribute]
-pub fn log_execution(attr: TokenStream, item: TokenStream) -> TokenStream {
+pub fn check_roles(attr: TokenStream, item: TokenStream) -> TokenStream {
     // Parse the attribute arguments
     let args = parse_macro_input!(attr as AttributeArgs);
 
